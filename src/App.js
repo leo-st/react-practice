@@ -9,10 +9,16 @@ function App() {
     { title: 'Pasta', amount: 2.7, date: new Date(2021, 5, 28) },
     { title: 'Chocolate', amount: 23.24, date: new Date(2021, 6, 29) },
   ];
+
+  function addExpenseHandler(expense){
+    console.log('In App.js');
+    console.log(expense);
+  }
+
   return (
     <div>
       <h2>Let's get started!</h2>
-      <NewExpense></NewExpense>
+      <NewExpense onAddExpense={addExpenseHandler}></NewExpense>
       <Expenses items={expenses} />
     </div>
   );
