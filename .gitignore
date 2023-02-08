@@ -3,6 +3,7 @@
 # dependencies
 /expensesApp/node_modules
 /to-dosApp/node_modules
+/solo_exercise/node_modules
 /.pnp
 .pnp.js
 
