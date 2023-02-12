@@ -45,7 +45,7 @@ function PersonForm(props){
     }
 
     return(
-    <div>
+    <React.Fragment>
         {error && (
             <Error 
             title={error.title}
@@ -66,7 +66,7 @@ function PersonForm(props){
                 <Button type="submit">Add Person</Button>
             </form>
         </Card>
-    </div>
+    </React.Fragment>
     
     );
 }
